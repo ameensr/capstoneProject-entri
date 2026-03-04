@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="verifyExamplesNavigation"/>
+          <include name="verifyTypesOfBugsNavigation"/>
         </methods>
       </class> <!-- tests.HeaderTest -->
     </classes>
