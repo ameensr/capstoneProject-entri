@@ -8,6 +8,7 @@
           <include name="testHelpIconVisibilityAndClick"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="pageSetup"/>
         </methods>
       </class> <!-- tests.HeaderPageTest -->
     </classes>

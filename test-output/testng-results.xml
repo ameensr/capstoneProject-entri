@@ -1,50 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="6" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-04T18:02:53 IST" name="Default suite" finished-at="2026-03-04T18:03:04 IST" duration-ms="10347">
+  <suite started-at="2026-03-05T20:40:46 IST" name="Default suite" finished-at="2026-03-05T20:41:19 IST" duration-ms="33567">
     <groups>
     </groups>
-    <test started-at="2026-03-04T18:02:53 IST" name="Default test" finished-at="2026-03-04T18:03:04 IST" duration-ms="10347">
+    <test started-at="2026-03-05T20:40:46 IST" name="Default test" finished-at="2026-03-05T20:41:19 IST" duration-ms="33567">
       <class name="tests.HeaderPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HeaderPageTest@557caf28]" started-at="2026-03-04T18:02:53 IST" name="setup" finished-at="2026-03-04T18:03:02 IST" duration-ms="9142" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:46 IST" name="setup" finished-at="2026-03-05T20:40:52 IST" duration-ms="5924" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testHelpIconVisibilityAndClick()[pri:0, instance:tests.HeaderPageTest@557caf28]" started-at="2026-03-04T18:03:02 IST" name="testHelpIconVisibilityAndClick" finished-at="2026-03-04T18:03:03 IST" duration-ms="1063" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:52 IST" name="pageSetup" finished-at="2026-03-05T20:40:52 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="testAcademyBugsLink()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:52 IST" name="testAcademyBugsLink" finished-at="2026-03-05T20:40:52 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAcademyBugsLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:52 IST" name="teardown" finished-at="2026-03-05T20:40:52 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:52 IST" name="setup" finished-at="2026-03-05T20:40:56 IST" duration-ms="3966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:56 IST" name="pageSetup" finished-at="2026-03-05T20:40:56 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="testExamplesOfBugsLink()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:56 IST" name="testExamplesOfBugsLink" finished-at="2026-03-05T20:40:56 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExamplesOfBugsLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:56 IST" name="teardown" finished-at="2026-03-05T20:40:57 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:40:57 IST" name="setup" finished-at="2026-03-05T20:41:00 IST" duration-ms="3369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:00 IST" name="pageSetup" finished-at="2026-03-05T20:41:00 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="testFindBugsLink()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:00 IST" name="testFindBugsLink" finished-at="2026-03-05T20:41:02 IST" duration-ms="2439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFindBugsLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:02 IST" name="teardown" finished-at="2026-03-05T20:41:03 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:03 IST" name="setup" finished-at="2026-03-05T20:41:06 IST" duration-ms="3934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:06 IST" name="pageSetup" finished-at="2026-03-05T20:41:07 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="testHelpIconVisibilityAndClick()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:07 IST" name="testHelpIconVisibilityAndClick" finished-at="2026-03-05T20:41:07 IST" duration-ms="118" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element click intercepted: Element <i style="font-size: 35px" class="fas fa-question-circle tour-question-mark"></i> is not clickable at point (1469, 30). Other element would receive the click: <canvas id="TourTipDisabledArea" width="1521" height="793" class="TourTipDisabledArea" style="width: 1521px; height: 793px; display: block;"></canvas>
-  (Session info: chrome=145.0.7632.117)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b66d89d70ebc5d5d121f8c853ee0b43f, clickElement {id=f.2A616C9566C3962F41BFFD3C6A07CC3E.d.1C4F39A12F4FC0ED8282A5D20B7368AC.e.22}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ameen\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60961}, goog:processID: 37732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60961/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b66d89d70ebc5d5d121f8c853ee0b43f)] -> class name: tour-question-mark]
-Session ID: b66d89d70ebc5d5d121f8c853ee0b43f]]>
+              <![CDATA[Tutorial popup not displayed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i style="font-size: 35px" class="fas fa-question-circle tour-question-mark"></i> is not clickable at point (1469, 30). Other element would receive the click: <canvas id="TourTipDisabledArea" width="1521" height="793" class="TourTipDisabledArea" style="width: 1521px; height: 793px; display: block;"></canvas>
-  (Session info: chrome=145.0.7632.117)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b66d89d70ebc5d5d121f8c853ee0b43f, clickElement {id=f.2A616C9566C3962F41BFFD3C6A07CC3E.d.1C4F39A12F4FC0ED8282A5D20B7368AC.e.22}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\ameen\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60961}, goog:processID: 37732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60961/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b66d89d70ebc5d5d121f8c853ee0b43f)] -> class name: tour-question-mark]
-Session ID: b66d89d70ebc5d5d121f8c853ee0b43f
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at pages.HeaderPage.clickHelpIcon(HeaderPage.java:53)
-at tests.HeaderPageTest.testHelpIconVisibilityAndClick(HeaderPageTest.java:79)
+              <![CDATA[java.lang.AssertionError: Tutorial popup not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.HeaderPageTest.testHelpIconVisibilityAndClick(HeaderPageTest.java:59)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -73,11 +102,43 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHelpIconVisibilityAndClick -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HeaderPageTest@557caf28]" started-at="2026-03-04T18:03:03 IST" name="teardown" finished-at="2026-03-04T18:03:04 IST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:07 IST" name="teardown" finished-at="2026-03-05T20:41:07 IST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:07 IST" name="setup" finished-at="2026-03-05T20:41:10 IST" duration-ms="3378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:10 IST" name="pageSetup" finished-at="2026-03-05T20:41:10 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="testReportBugsLink()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:10 IST" name="testReportBugsLink" finished-at="2026-03-05T20:41:13 IST" duration-ms="2626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testReportBugsLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:13 IST" name="teardown" finished-at="2026-03-05T20:41:13 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:13 IST" name="setup" finished-at="2026-03-05T20:41:18 IST" duration-ms="5116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="pageSetup()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:18 IST" name="pageSetup" finished-at="2026-03-05T20:41:18 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageSetup -->
+        <test-method signature="testTypesOfBugsLink()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:18 IST" name="testTypesOfBugsLink" finished-at="2026-03-05T20:41:19 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTypesOfBugsLink -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.HeaderPageTest@5bf0d49]" started-at="2026-03-05T20:41:19 IST" name="teardown" finished-at="2026-03-05T20:41:19 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
