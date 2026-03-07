@@ -3,13 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.HeaderPageTest">
+      <class name="tests.ExampleOfBugsPageTest">
         <methods>
           <include name="setup"/>
-          <include name="testHelpIconVisibilityAndClick"/>
           <include name="teardown"/>
+          <include name="testBookingTile"/>
+          <include name="testArticlesErrorTile"/>
+          <include name="testSocialShareTile"/>
+          <include name="setUp"/>
+          <include name="testVideoPlayerTile"/>
+          <include name="testSearchErrorTile"/>
+          <include name="testSendButtonTile"/>
         </methods>
-      </class> <!-- tests.HeaderPageTest -->
+      </class> <!-- tests.ExampleOfBugsPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

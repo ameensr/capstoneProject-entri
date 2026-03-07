@@ -8,47 +8,49 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">33,567</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num attn">6</td><td class="num">0</td><td class="num">0</td><td class="num">18,742</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.HeaderPageTest</td><td><a href="#m0">testHelpIconVisibilityAndClick</a></td><td rowspan="1">1772723467038</td><td rowspan="1">118</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">tests.HeaderPageTest</td><td><a href="#m1">testAcademyBugsLink</a></td><td rowspan="1">1772723452303</td><td rowspan="1">368</td></tr><tr class="passedeven"><td><a href="#m2">testExamplesOfBugsLink</a></td><td rowspan="1">1772723456808</td><td rowspan="1">166</td></tr><tr class="passedeven"><td><a href="#m3">testFindBugsLink</a></td><td rowspan="1">1772723460516</td><td rowspan="1">2439</td></tr><tr class="passedeven"><td><a href="#m4">testReportBugsLink</a></td><td rowspan="1">1772723470699</td><td rowspan="1">2626</td></tr><tr class="passedeven"><td><a href="#m5">testTypesOfBugsLink</a></td><td rowspan="1">1772723478633</td><td rowspan="1">1083</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.ExampleOfBugsPageTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1772821760484</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">tests.ExampleOfBugsPageTest</td><td><a href="#m1">setUp</a></td><td rowspan="5">1772821760489</td><td rowspan="5">0</td></tr><tr class="skippedeven"><td><a href="#m2">setUp</a></td></tr><tr class="skippedeven"><td><a href="#m3">setUp</a></td></tr><tr class="skippedeven"><td><a href="#m4">setUp</a></td></tr><tr class="skippedeven"><td><a href="#m5">setUp</a></td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="6">tests.ExampleOfBugsPageTest</td><td><a href="#m6">testArticlesErrorTile</a></td><td rowspan="1">1772821760496</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">testBookingTile</a></td><td rowspan="1">1772821760507</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">testSearchErrorTile</a></td><td rowspan="1">1772821760504</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m9">testSendButtonTile</a></td><td rowspan="1">1772821760490</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">testSocialShareTile</a></td><td rowspan="1">1772821760488</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">testVideoPlayerTile</a></td><td rowspan="1">1772821760493</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.HeaderPageTest</td><td><a href="#m12">testAcademyBugsLink</a></td><td rowspan="1">1772821746621</td><td rowspan="1">197</td></tr><tr class="passedeven"><td><a href="#m13">testExamplesOfBugsLink</a></td><td rowspan="1">1772821746831</td><td rowspan="1">177</td></tr><tr class="passedeven"><td><a href="#m14">testFindBugsLink</a></td><td rowspan="1">1772821747018</td><td rowspan="1">4395</td></tr><tr class="passedeven"><td><a href="#m15">testHelpIconVisibilityAndClick</a></td><td rowspan="1">1772821751424</td><td rowspan="1">3117</td></tr><tr class="passedeven"><td><a href="#m16">testReportBugsLink</a></td><td rowspan="1">1772821754577</td><td rowspan="1">4234</td></tr><tr class="passedeven"><td><a href="#m17">testTypesOfBugsLink</a></td><td rowspan="1">1772821758821</td><td rowspan="1">1661</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.HeaderPageTest#testHelpIconVisibilityAndClick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Tutorial popup not displayed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at tests.HeaderPageTest.testHelpIconVisibilityAndClick(HeaderPageTest.java:59)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+<h2>Test</h2><h3 id="m0">tests.ExampleOfBugsPageTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at tests.ExampleOfBugsPageTest.setUp(ExampleOfBugsPageTest.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.HeaderPageTest#testAcademyBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.HeaderPageTest#testExamplesOfBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">tests.HeaderPageTest#testFindBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">tests.HeaderPageTest#testReportBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">tests.HeaderPageTest#testTypesOfBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.ExampleOfBugsPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.ExampleOfBugsPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.ExampleOfBugsPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.ExampleOfBugsPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.ExampleOfBugsPageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.ExampleOfBugsPageTest#testArticlesErrorTile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at tests.ExampleOfBugsPageTest.setUp(ExampleOfBugsPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.ExampleOfBugsPageTest#testBookingTile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at tests.ExampleOfBugsPageTest.setUp(ExampleOfBugsPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.ExampleOfBugsPageTest#testSearchErrorTile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at tests.ExampleOfBugsPageTest.setUp(ExampleOfBugsPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.ExampleOfBugsPageTest#testSendButtonTile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at tests.ExampleOfBugsPageTest.setUp(ExampleOfBugsPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.ExampleOfBugsPageTest#testSocialShareTile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at tests.ExampleOfBugsPageTest.setUp(ExampleOfBugsPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.ExampleOfBugsPageTest#testVideoPlayerTile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at tests.ExampleOfBugsPageTest.setUp(ExampleOfBugsPageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.HeaderPageTest#testAcademyBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.HeaderPageTest#testExamplesOfBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.HeaderPageTest#testFindBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">tests.HeaderPageTest#testHelpIconVisibilityAndClick</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">tests.HeaderPageTest#testReportBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">tests.HeaderPageTest#testTypesOfBugsLink</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

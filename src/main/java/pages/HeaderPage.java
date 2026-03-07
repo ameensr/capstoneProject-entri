@@ -72,7 +72,8 @@ public class HeaderPage {
 		return driver.findElement(helpIcon).isDisplayed();
 	}
 
-	public boolean isTutorialPopupDisplayed() {
+	public boolean isTutorialPopupDisplayed() throws InterruptedException {
+		Thread.sleep(3000);
 		return driver.findElement(tutorialPopupTitle).isDisplayed();
 	}
 

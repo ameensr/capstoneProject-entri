@@ -16,7 +16,10 @@ public class HeaderPageTest extends BaseTest {
 	@BeforeMethod
     public void pageSetup() {
         headerPage = new HeaderPage(driver);
-        headerPage.closeTutorial();
+        try {
+            headerPage.closeTutorial();
+        } catch (Exception e) {
+        }
     }
 
 	@Test
@@ -50,7 +53,7 @@ public class HeaderPageTest extends BaseTest {
     }
 
     @Test
-    public void testHelpIconVisibilityAndClick() {
+    public void testHelpIconVisibilityAndClick() throws InterruptedException {
 
         Assert.assertTrue(headerPage.isHelpIconVisible());
 
