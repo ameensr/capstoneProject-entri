@@ -19,6 +19,7 @@ public class ExampleOfBugsPage {
 	private By articlesErrorTile = By.xpath("(//div[@class='example-tile-div-text'])[4]");
 	private By searchErrorTile = By.xpath("(//div[@class='example-tile-div-text'])[5]");
 	private By bookingTile = By.xpath("(//div[@class='example-tile-div-text'])[6]");
+	
 	private By popupTileClose = By.xpath("//div[@id='popmake-4434']//button[@aria-label='Close'][normalize-space()='×']");
 
 	// Actions
@@ -46,7 +47,7 @@ public class ExampleOfBugsPage {
 		driver.findElement(bookingTile).click();
 	}
 
-	public void clickpPopupTileClose() {
+	public void closePopup() {
 		driver.findElement(popupTileClose).click();
 	}
 

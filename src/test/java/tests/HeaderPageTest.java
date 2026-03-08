@@ -55,7 +55,7 @@ public class HeaderPageTest extends BaseTest {
     }
 
     @Test
-    public void testHelpIconVisibilityAndClick() throws InterruptedException {
+    public void testHelpIconVisibilityAndClick() {
 
         Assert.assertTrue(headerPage.isHelpIconVisible());
 

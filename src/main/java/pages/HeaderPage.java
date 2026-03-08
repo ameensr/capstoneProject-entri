@@ -1,7 +1,11 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HeaderPage {
 
@@ -13,33 +17,17 @@ public class HeaderPage {
 	}
 
 	// Locators
-	// Academy Bugs logo
 	private By academyBugsLink = By.xpath("//a[normalize-space()='AcademyBugs.com']");
-
-	// Examples of Bugs menu
 	private By examplesOfBugsLink = By.xpath("//a[normalize-space()='Examples of Bugs']");
-
-	// Types of Bugs menu
 	private By typesOfBugsLink = By.xpath("//a[normalize-space()='Types of Bugs']");
-
-	// Find Bugs menu
 	private By findBugsLink = By.xpath("//a[normalize-space()='Find Bugs']");
-
-	// Report Bugs menu
 	private By reportBugsLink = By.xpath("//a[normalize-space()='Report Bugs']");
-
-	// Help icon (question mark)
-	private By helpIcon = By.xpath("//i[@class='fas fa-question-circle tour-question-mark']");
-
-	// Close tutorial button
+	
+	private By helpIcon = By.xpath("//i[contains(@class,'tour-question-mark')]");
 	private By closeTutorialButton = By.xpath("//div[@id='TourTip0']//button[@type='button'][normalize-space()='×']");
-
-	// Tutorial popup title
 	private By tutorialPopupTitle = By.xpath("//p[normalize-space()='Tutorial']");
 
-
 	// Actions (Methods)
-
 	public void closeTutorial() {
 		driver.findElement(closeTutorialButton).click();
 	}
@@ -72,9 +60,13 @@ public class HeaderPage {
 		return driver.findElement(helpIcon).isDisplayed();
 	}
 
-	public boolean isTutorialPopupDisplayed() throws InterruptedException {
-		Thread.sleep(3000);
-		return driver.findElement(tutorialPopupTitle).isDisplayed();
+	public boolean isTutorialPopupDisplayed() {
+
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
+	    return wait.until(
+	        ExpectedConditions.visibilityOfElementLocated(tutorialPopupTitle)
+	    ).isDisplayed();
 	}
 
 	public String getTutorialPopupText() {
