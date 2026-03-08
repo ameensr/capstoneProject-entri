@@ -3,6 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="tests.HeaderPageTest">
+        <methods>
+          <include name="testHelpIconVisibilityAndClick"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="testExamplesOfBugsLink"/>
+          <include name="testReportBugsLink"/>
+          <include name="pageSetup"/>
+          <include name="testFindBugsLink"/>
+          <include name="testTypesOfBugsLink"/>
+          <include name="testAcademyBugsLink"/>
+        </methods>
+      </class> <!-- tests.HeaderPageTest -->
       <class name="tests.ExampleOfBugsPageTest">
         <methods>
           <include name="setup"/>

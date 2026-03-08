@@ -16,6 +16,8 @@ public class HeaderPageTest extends BaseTest {
 	@BeforeMethod
     public void pageSetup() {
         headerPage = new HeaderPage(driver);
+        
+       
         try {
             headerPage.closeTutorial();
         } catch (Exception e) {

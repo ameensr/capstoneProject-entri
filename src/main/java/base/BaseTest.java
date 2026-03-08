@@ -1,5 +1,6 @@
 package base;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -16,8 +17,8 @@ public class BaseTest {
     protected ConfigReader config;
     protected String baseUrl = "https://academybugs.com/";
 
-    @BeforeTest
-    public void setup() {
+    @BeforeMethod(alwaysRun = true)
+    public void setup() throws InterruptedException {
 
         config = new ConfigReader();
 
@@ -26,10 +27,15 @@ public class BaseTest {
 
         driver.manage().window().maximize();
         driver.get(config.getBaseUrl());
+        
+        
+        Thread.sleep(3000);
+
+        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='50%'");
         driver.get(baseUrl + "#examples-of-bugs");
     }
 
-    @AfterTest
+    @AfterMethod(alwaysRun = true)
     public void teardown() {
         driver.quit();
     }

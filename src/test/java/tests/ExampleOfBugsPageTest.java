@@ -17,7 +17,7 @@ public class ExampleOfBugsPageTest extends BaseTest {
 	@BeforeMethod
     public void setUp()  {
 
-	    driver.get("https://academybugs.com/#examples-of-bugs");
+	    //driver.get("https://academybugs.com/#examples-of-bugs");
 
 	    exampleOfBugsPage = new ExampleOfBugsPage(driver);
 	    headerPage = new HeaderPage(driver);
@@ -86,5 +86,6 @@ public class ExampleOfBugsPageTest extends BaseTest {
         exampleOfBugsPage.clickpPopupTileClose();
     }
 
+    
    
 }
