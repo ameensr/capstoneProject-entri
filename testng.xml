@@ -5,6 +5,7 @@
 		<classes>
 			<class name="tests.HeaderPageTest" />
 			<class name="tests.ExampleOfBugsPageTest" />
+			<class name="tests.TypesOfBugsPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

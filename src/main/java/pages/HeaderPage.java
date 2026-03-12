@@ -60,14 +60,19 @@ public class HeaderPage {
 		return driver.findElement(helpIcon).isDisplayed();
 	}
 
-	public boolean isTutorialPopupDisplayed() {
+//	public boolean isTutorialPopupDisplayed() {
+//
+//	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//
+//	    return wait.until(
+//	        ExpectedConditions.visibilityOfElementLocated(tutorialPopupTitle)
+//	    ).isDisplayed();
+//	}
+	
+	 public boolean isTutorialPopupDisplayed() {
+	        return driver.findElement(tutorialPopupTitle).isDisplayed();
+	    }
 
-	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-
-	    return wait.until(
-	        ExpectedConditions.visibilityOfElementLocated(tutorialPopupTitle)
-	    ).isDisplayed();
-	}
 
 	public String getTutorialPopupText() {
 	    return driver.findElement(tutorialPopupTitle).getText();

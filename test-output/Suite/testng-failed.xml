@@ -5,8 +5,8 @@
     <classes>
       <class name="tests.HeaderPageTest">
         <methods>
-          <include name="setup"/>
           <include name="testHelpIconVisibilityAndClick"/>
+          <include name="setup"/>
           <include name="teardown"/>
           <include name="pageSetup"/>
         </methods>

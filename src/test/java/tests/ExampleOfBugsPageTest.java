@@ -30,29 +30,29 @@ public class ExampleOfBugsPageTest extends BaseTest {
 
 
     @Test(priority = 1)
-    public void testSocialShareTile() throws InterruptedException {
+    public void testSocialShareTile()  {
     	exampleOfBugsPage.clickSocialShareTile();
         // Add assertion for the helpful message
         Assert.assertTrue(driver.getPageSource().contains("buttons don’t work"));
-        Thread.sleep(3000);
+        
         exampleOfBugsPage.closePopup();
     }
 
     @Test(priority = 2)
-    public void testSendButtonTile() throws InterruptedException {
+    public void testSendButtonTile()  {
     	exampleOfBugsPage.clickSendButtonTile();
         // Add assertion for the detailed error message
         Assert.assertTrue(driver.getPageSource().contains("button returns an error page"));
-        Thread.sleep(3000);
+        
         exampleOfBugsPage.closePopup();
     }
 
     @Test(priority = 3)
-    public void testVideoPlayerTile() throws InterruptedException {
+    public void testVideoPlayerTile()  {
     	exampleOfBugsPage.clickVideoPlayerTile();
         // Add assertion for troubleshooting guide
         Assert.assertTrue(driver.getPageSource().contains("example some videos can’t be played"));
-        Thread.sleep(3000);
+        
         exampleOfBugsPage.closePopup();
     }
 
