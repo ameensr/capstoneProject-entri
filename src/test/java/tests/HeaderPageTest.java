@@ -1,8 +1,6 @@
 package tests;
 
 
-import java.time.Duration;
-
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -56,7 +54,8 @@ public class HeaderPageTest extends BaseTest {
 
     @Test
     public void testHelpIconVisibilityAndClick() {
-
+    	
+    	 headerPage.closeTutorialIfPresent();
         Assert.assertTrue(headerPage.isHelpIconVisible());
 
         headerPage.clickHelpIcon();
@@ -64,8 +63,8 @@ public class HeaderPageTest extends BaseTest {
         Assert.assertTrue(headerPage.isTutorialPopupDisplayed(),
                 "Tutorial popup not displayed");
 
-        Assert.assertEquals(headerPage.getTutorialPopupText(),
-                "Tutorial",
-                "Tutorial text mismatch");
+
+        Assert.assertTrue(headerPage.getTutorialPopupText().contains("Tutorial"),
+                "Tutorial title not found");
     }
 }

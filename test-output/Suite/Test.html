@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>26/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>51/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 12 23:56:43 IST 2026</td>
+<td>Started on:</td><td>Sun Mar 15 17:40:43 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>167 seconds (167633 ms)</td>
+<tr><td>Total time:</td><td>332 seconds (332162 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.HeaderPageTest.testHelpIconVisibilityAndClick()'><b>testHelpIconVisibilityAndClick</b><br>Test class: tests.HeaderPageTest</td>
-<td><div><pre>java.lang.AssertionError: Tutorial popup not displayed expected [true] but found [false]
-	at tests.HeaderPageTest.testHelpIconVisibilityAndClick(HeaderPageTest.java:64)
+<td title='tests.FindBugsPageTest.testView10LimitsProducts()'><b>testView10LimitsProducts</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking 'View 10' limits the product display to 10 items</td>
+<td><div><pre>java.lang.AssertionError: Product count should be 10 or fewer. Actual: 18 expected [true] but found [false]
+	at tests.FindBugsPageTest.testView10LimitsProducts(FindBugsPageTest.java:174)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1400582895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1400582895'><pre>java.lang.AssertionError: Tutorial popup not displayed expected [true] but found [false]
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1975171943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1975171943'><pre>java.lang.AssertionError: Product count should be 10 or fewer. Actual: 18 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertTrue(Assert.java:57)
-	at tests.HeaderPageTest.testHelpIconVisibilityAndClick(HeaderPageTest.java:64)
+	at tests.FindBugsPageTest.testView10LimitsProducts(FindBugsPageTest.java:174)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -114,7 +114,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>tests.HeaderPageTest@7eac9008</td></tr>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -125,135 +125,260 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.TypesOfBugsPageTest.testTermsAndConditionsLink()'><b>testTermsAndConditionsLink</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the 'Terms & Conditions' footer link navigates to the correct page</td>
-<td></td>
-<td>2</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.HeaderPageTest.testExamplesOfBugsLink()'><b>testExamplesOfBugsLink</b><br>Test class: tests.HeaderPageTest</td>
+<td title='tests.TypesOfBugsPageTest.testPageLoadsSuccessfully()'><b>testPageLoadsSuccessfully</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Types of Bugs page loads without error</td>
 <td></td>
 <td>0</td>
-<td>tests.HeaderPageTest@7eac9008</td></tr>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.HeaderPageTest.testReportBugsLink()'><b>testReportBugsLink</b><br>Test class: tests.HeaderPageTest</td>
+<td></td>
+<td>8</td>
+<td>tests.HeaderPageTest@2cd76f31</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testProductDetailPriceMatchesListing()'><b>testProductDetailPriceMatchesListing</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the product (Buddha Bracelet) detail page price matches the listing page price</td>
+<td></td>
+<td>2</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSortPriceHighToLow()'><b>testSortPriceHighToLow</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that sorting by 'Price High-Low' reorders products correctly</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testCheckoutNavigation()'><b>testCheckoutNavigation</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the user is able to navigate to the cart page after adding a product to the cart and continue to checkout</td>
+<td></td>
+<td>8</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
 <tr>
 <td title='tests.TypesOfBugsPageTest.testPageTitle()'><b>testPageTitle</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the browser tab title is correct</td>
 <td></td>
 <td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.clickFunctionalCard()'><b>clickFunctionalCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that Function card is clicked and displays the description</td>
-<td></td>
-<td>1</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.HeaderPageTest.testFindBugsLink()'><b>testFindBugsLink</b><br>Test class: tests.HeaderPageTest</td>
-<td></td>
-<td>3</td>
-<td>tests.HeaderPageTest@7eac9008</td></tr>
-<tr>
-<td title='tests.ExampleOfBugsPageTest.testSocialShareTile()'><b>testSocialShareTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ExampleOfBugsPageTest@55fe41ea</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testContentCard()'><b>testContentCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Content card displays the correct title and description</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.HeaderPageTest.testReportBugsLink()'><b>testReportBugsLink</b><br>Test class: tests.HeaderPageTest</td>
-<td></td>
-<td>6</td>
-<td>tests.HeaderPageTest@7eac9008</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testPerformanceCard()'><b>testPerformanceCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Performance card displays the correct title and description</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testTabletViewport()'><b>testTabletViewport</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the page layout renders correctly on tablet viewport (768px)</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.HeaderPageTest.testAcademyBugsLink()'><b>testAcademyBugsLink</b><br>Test class: tests.HeaderPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.HeaderPageTest@7eac9008</td></tr>
-<tr>
-<td title='tests.HeaderPageTest.testTypesOfBugsLink()'><b>testTypesOfBugsLink</b><br>Test class: tests.HeaderPageTest</td>
-<td></td>
-<td>3</td>
-<td>tests.HeaderPageTest@7eac9008</td></tr>
-<tr>
-<td title='tests.ExampleOfBugsPageTest.testBookingTile()'><b>testBookingTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ExampleOfBugsPageTest@55fe41ea</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testPageSubtitle()'><b>testPageSubtitle</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the page subtitle heading is correct</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testPageLoadsSuccessfully()'><b>testPageLoadsSuccessfully</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Types of Bugs page loads without error</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.ExampleOfBugsPageTest.testVideoPlayerTile()'><b>testVideoPlayerTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ExampleOfBugsPageTest@55fe41ea</td></tr>
-<tr>
-<td title='tests.ExampleOfBugsPageTest.testSearchErrorTile()'><b>testSearchErrorTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ExampleOfBugsPageTest@55fe41ea</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testAllFiveBugCategoryCardsDisplayed()'><b>testAllFiveBugCategoryCardsDisplayed</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that all 5 bug category cards are displayed</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.ExampleOfBugsPageTest.testSendButtonTile()'><b>testSendButtonTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
-<td></td>
-<td>0</td>
-<td>tests.ExampleOfBugsPageTest@55fe41ea</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testTypesOfBugsNavIsActive()'><b>testTypesOfBugsNavIsActive</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the 'Types of Bugs' nav item is highlighted as active</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testCrashCard()'><b>testCrashCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Crash card displays the correct title and description</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
-<tr>
-<td title='tests.TypesOfBugsPageTest.testFunctionalCard()'><b>testFunctionalCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Functional card displays the correct title and description</td>
-<td></td>
-<td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
 <tr>
 <td title='tests.TypesOfBugsPageTest.testPrivacyPolicyLink()'><b>testPrivacyPolicyLink</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the 'Privacy Policy' footer link navigates to the correct page</td>
 <td></td>
 <td>1</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
 <tr>
-<td title='tests.ExampleOfBugsPageTest.testArticlesErrorTile()'><b>testArticlesErrorTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
+<td title='tests.ExampleOfBugsPageTest.testSearchErrorTile()'><b>testSearchErrorTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
 <td></td>
 <td>0</td>
-<td>tests.ExampleOfBugsPageTest@55fe41ea</td></tr>
+<td>tests.ExampleOfBugsPageTest@8297b3a</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testCheckoutNowNavigation()'><b>testCheckoutNowNavigation</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'View Cart' button navigates to the cart page</td>
+<td></td>
+<td>3</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testPageLoadsSuccessfully()'><b>testPageLoadsSuccessfully</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the Find Bugs page loads successfully without errors</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testView50ShowsAllProducts()'><b>testView50ShowsAllProducts</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking 'View 50' shows all products without pagination</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAllProductImagesLoad()'><b>testAllProductImagesLoad</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that all product images load correctly without broken icons</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAddToCartDnkYellowShoes()'><b>testAddToCartDnkYellowShoes</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'Add to Cart' button works for DNK Yellow Shoes</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.ExampleOfBugsPageTest.testBookingTile()'><b>testBookingTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExampleOfBugsPageTest@8297b3a</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testResultsCountLabel()'><b>testResultsCountLabel</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the product result count label is accurate</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.HeaderPageTest.testFindBugsLink()'><b>testFindBugsLink</b><br>Test class: tests.HeaderPageTest</td>
+<td></td>
+<td>7</td>
+<td>tests.HeaderPageTest@2cd76f31</td></tr>
+<tr>
+<td title='tests.HeaderPageTest.testHelpIconVisibilityAndClick()'><b>testHelpIconVisibilityAndClick</b><br>Test class: tests.HeaderPageTest</td>
+<td></td>
+<td>5</td>
+<td>tests.HeaderPageTest@2cd76f31</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testPerformanceCard()'><b>testPerformanceCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Performance card displays the correct title and description</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testTabletViewport()'><b>testTabletViewport</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the page layout renders correctly on tablet viewport (768px)</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAddToCartDarkGreyJeans()'><b>testAddToCartDarkGreyJeans</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'Add to Cart' button works for Dark Grey Jeans</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.HeaderPageTest.testAcademyBugsLink()'><b>testAcademyBugsLink</b><br>Test class: tests.HeaderPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderPageTest@2cd76f31</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testTermsAndConditionsLink()'><b>testTermsAndConditionsLink</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the 'Terms & Conditions' footer link navigates to the correct page</td>
+<td></td>
+<td>3</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testDefaultSortOptionSelected()'><b>testDefaultSortOptionSelected</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the default sorting option is selected on page load</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.ExampleOfBugsPageTest.testSendButtonTile()'><b>testSendButtonTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExampleOfBugsPageTest@8297b3a</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testTabletViewport()'><b>testTabletViewport</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the page renders correctly on tablet viewport (768px)</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.HeaderPageTest.testTypesOfBugsLink()'><b>testTypesOfBugsLink</b><br>Test class: tests.HeaderPageTest</td>
+<td></td>
+<td>2</td>
+<td>tests.HeaderPageTest@2cd76f31</td></tr>
 <tr>
 <td title='tests.TypesOfBugsPageTest.testMobileViewport()'><b>testMobileViewport</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the page layout renders correctly on mobile viewport (375px)</td>
 <td></td>
 <td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testPageSubtitle()'><b>testPageSubtitle</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the page subtitle text is correct</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.clickFunctionalCard()'><b>clickFunctionalCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that Function card is clicked and displays the description</td>
+<td></td>
+<td>1</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testTypesOfBugsNavIsActive()'><b>testTypesOfBugsNavIsActive</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the 'Types of Bugs' nav item is highlighted as active</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSortPriceLowToHigh()'><b>testSortPriceLowToHigh</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that sorting by 'Price Low-High' reorders products correctly</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
 <tr>
 <td title='tests.TypesOfBugsPageTest.testVisualCard()'><b>testVisualCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Visual card displays the correct title and description</td>
 <td></td>
 <td>0</td>
-<td>tests.TypesOfBugsPageTest@fbd1f6</td></tr>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testPageSubtitle()'><b>testPageSubtitle</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the page subtitle heading is correct</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testEighteenProductsDisplayed()'><b>testEighteenProductsDisplayed</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that 18 products are displayed by default</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testCrashCard()'><b>testCrashCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Crash card displays the correct title and description</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testDarkBlueDenimJeansLoginPricing()'><b>testDarkBlueDenimJeansLoginPricing</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that Dark Blue Denim Jeans shows 'Login for Pricing' for users</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAllProductsHavePrice()'><b>testAllProductsHavePrice</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that all products display a price</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testFunctionalCard()'><b>testFunctionalCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Functional card displays the correct title and description</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSelectOptionsFallCoat()'><b>testSelectOptionsFallCoat</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'Select Options' button opens the product detail page for Fall Coat</td>
+<td></td>
+<td>2</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testBlueHoodieSalePrice()'><b>testBlueHoodieSalePrice</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the Blue Hoodie displays the correct original and sale price</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.ExampleOfBugsPageTest.testArticlesErrorTile()'><b>testArticlesErrorTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExampleOfBugsPageTest@8297b3a</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testAllFiveBugCategoryCardsDisplayed()'><b>testAllFiveBugCategoryCardsDisplayed</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that all 5 bug category cards are displayed</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testMobileViewport()'><b>testMobileViewport</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the page renders correctly on mobile viewport (375px)</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testDenimCoatImageDomain()'><b>testDenimCoatImageDomain</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the Denim Coat image loads from the correct domain</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testView25ShowsAllProducts()'><b>testView25ShowsAllProducts</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking 'View 25' shows all 18 products</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.ExampleOfBugsPageTest.testSocialShareTile()'><b>testSocialShareTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExampleOfBugsPageTest@8297b3a</td></tr>
+<tr>
+<td title='tests.ExampleOfBugsPageTest.testVideoPlayerTile()'><b>testVideoPlayerTile</b><br>Test class: tests.ExampleOfBugsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExampleOfBugsPageTest@8297b3a</td></tr>
+<tr>
+<td title='tests.HeaderPageTest.testExamplesOfBugsLink()'><b>testExamplesOfBugsLink</b><br>Test class: tests.HeaderPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderPageTest@2cd76f31</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testClickProductOpensDetailPage()'><b>testClickProductOpensDetailPage</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking a product name opens its detail page</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
+<tr>
+<td title='tests.TypesOfBugsPageTest.testContentCard()'><b>testContentCard</b><br>Test class: tests.TypesOfBugsPageTest<br>Test method: Verify that the Content card displays the correct title and description</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsPageTest@2362f559</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSortTitleAToZ()'><b>testSortTitleAToZ</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that sorting by 'Title A-Z' reorders products alphabetically</td>
+<td></td>
+<td>2</td>
+<td>tests.FindBugsPageTest@b2c9a9c</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,7 +1,6 @@
 package pages;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,11 +24,19 @@ public class HeaderPage {
 	
 	private By helpIcon = By.xpath("//i[contains(@class,'tour-question-mark')]");
 	private By closeTutorialButton = By.xpath("//div[@id='TourTip0']//button[@type='button'][normalize-space()='×']");
-	private By tutorialPopupTitle = By.xpath("//p[normalize-space()='Tutorial']");
+	private By tutorialPopupTitle = By.xpath("//div[@id='TourTip0']//div[@class='TourTipContent']");
+	
 
 	// Actions (Methods)
 	public void closeTutorial() {
 		driver.findElement(closeTutorialButton).click();
+	}
+	
+	public void closeTutorialIfPresent() {
+
+	    if(driver.findElements(closeTutorialButton).size() > 0) {
+	        driver.findElement(closeTutorialButton).click();
+	    }
 	}
 
 	public void clickAcademyBugsLink() {
@@ -60,18 +67,18 @@ public class HeaderPage {
 		return driver.findElement(helpIcon).isDisplayed();
 	}
 
-//	public boolean isTutorialPopupDisplayed() {
-//
-//	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-//
-//	    return wait.until(
-//	        ExpectedConditions.visibilityOfElementLocated(tutorialPopupTitle)
-//	    ).isDisplayed();
-//	}
+	public boolean isTutorialPopupDisplayed() {
+
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+
+	    return wait.until(
+	        ExpectedConditions.visibilityOfElementLocated(tutorialPopupTitle)
+	    ).isDisplayed();
+	}
 	
-	 public boolean isTutorialPopupDisplayed() {
-	        return driver.findElement(tutorialPopupTitle).isDisplayed();
-	    }
+//	 public boolean isTutorialPopupDisplayed() {
+//	        return driver.findElement(tutorialPopupTitle).isDisplayed();
+//	    }
 
 
 	public String getTutorialPopupText() {

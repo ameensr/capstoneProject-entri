@@ -1,8 +1,6 @@
 package tests;
 
-import java.time.Duration;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -157,11 +155,10 @@ public class TypesOfBugsPageTest extends BaseTest {
         driver.manage().window().maximize();
     }
     
-    @Test(priority = 7, description = "Verify that Function card is clicked and displays the description")
+    @Test(priority = 15, description = "Verify that Function card is clicked and displays the description")
     public void clickFunctionalCard() {
     	
     	typesOfBugsPage.clickFunctionalCard();
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         Assert.assertEquals(typesOfBugsPage.getFunctionalCardPopupDesc(),
             "Workflow failures producing an unexpected or illogical application behavior where the actual result differs from the expected result.");
       

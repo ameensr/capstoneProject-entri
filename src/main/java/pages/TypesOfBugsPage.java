@@ -40,21 +40,10 @@ private By contentCardDesc     = By.xpath("//p[contains(text(),'Content issues a
 private By performanceCardDesc = By.xpath("//p[contains(text(),'Problematic slowness or hanging, sluggish interfac')]");
 private By crashCardDesc       = By.xpath("//a[@class='types-of-bugs-tile-div']//p[@class='types-of-bugs-tile-subtext'][contains(text(),'Application quits or closes unexpectedly while usi')]");
 
-// Expanded / active card detail (shown after click)
-//private By expandedCardDesc = By.xpath("//div[contains(@class,'types-detail')]//p");
-
-// Bug counter widget
-//private By bugCounterText  = By.xpath("//*[contains(text(),'You found') and contains(text(),'bugs out of 25')]");
-//private By bugNumberSlots  = By.xpath("//div[contains(@class,'sq-found')]//a | //ul[contains(@class,'bug-tracker')]//li//a");
-
-// Footer elements
-private By footerUTestLogo       = By.xpath("//img[@alt='uTest']");
-//private By footerAboutUs         = By.xpath("//h5[normalize-space()='About Us'] | //a[normalize-space()='About Us']");
 private By footerTerms           = By.xpath("//a[normalize-space()='Terms & Conditions']");
 private By footerPrivacyPolicy   = By.xpath("//a[normalize-space()='Privacy Policy']");
 
-// ── Actions ───────────────────────────────────────────────────────────────
-
+//Actions (Methods)
 public void clickFunctionalCard() {
 	driver.findElement(functionalCard).click();
 }
@@ -83,7 +72,8 @@ public void clickFooterPrivacyPolicy() {
 	driver.findElement(footerPrivacyPolicy).click();
 }
 
-// ── Getters ───────────────────────────────────────────────────────────────
+
+// Getters for text content
 
 public String getPageSubtitle() {
 	return driver.findElement(pageSubtitle).getText();
@@ -134,16 +124,6 @@ public String getFunctionalCardPopupDesc() {
     return wait.until(ExpectedConditions.visibilityOfElementLocated(functionalCardTitlePopupDes)).getText().trim();
 }
 
-//public String getBugCounterText() {
-//	return driver.findElement(bugCounterText).getText();
-//}
-
-//public String getExpandedCardDescription() {
-//	return driver.findElement(expandedCardDesc).getText();
-//}
-
-// ── Visibility checks ─────────────────────────────────────────────────────
-
 public boolean isPageSubtitleDisplayed() {
 	return driver.findElement(pageSubtitle).isDisplayed();
 }
@@ -168,13 +148,6 @@ public boolean isCrashCardDisplayed() {
 	return driver.findElement(crashCardTitle).isDisplayed();
 }
 
-//public boolean isBugCounterDisplayed() {
-//	return driver.findElement(bugCounterText).isDisplayed();
-//}
-//
-//public boolean isFooterAboutUsDisplayed() {
-//	return driver.findElement(footerAboutUs).isDisplayed();
-//}
 
 public boolean isFooterTermsDisplayed() {
 	return driver.findElement(footerTerms).isDisplayed();
@@ -183,10 +156,6 @@ public boolean isFooterTermsDisplayed() {
 public boolean isFooterPrivacyPolicyDisplayed() {
 	return driver.findElement(footerPrivacyPolicy).isDisplayed();
 }
-
-//public int getBugNumberSlotCount() {
-//	return driver.findElements(bugNumberSlots).size();
-//}
 
 public int getTotalCardCount() {
 	int count = 0;
