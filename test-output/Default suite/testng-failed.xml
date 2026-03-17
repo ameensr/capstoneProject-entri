@@ -6,8 +6,8 @@
       <class name="tests.FindBugsPageTest">
         <methods>
           <include name="setup"/>
-          <include name="testCheckoutNavigation"/>
           <include name="teardown"/>
+          <include name="testView10LimitsProducts"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- tests.FindBugsPageTest -->

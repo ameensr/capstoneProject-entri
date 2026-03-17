@@ -43,6 +43,11 @@ private By crashCardDesc       = By.xpath("//a[@class='types-of-bugs-tile-div']/
 private By footerTerms           = By.xpath("//a[normalize-space()='Terms & Conditions']");
 private By footerPrivacyPolicy   = By.xpath("//a[normalize-space()='Privacy Policy']");
 
+private By opportunitiesLink = By.xpath("//b[normalize-space()='Opportunities We Provide']");
+private By articlesLink = By.xpath("//b[normalize-space()='Articles']");
+
+private By articlesHeading = By.xpath("(//h5[normalize-space()='Articles'])[1]");
+
 //Actions (Methods)
 public void clickFunctionalCard() {
 	driver.findElement(functionalCard).click();
@@ -70,6 +75,52 @@ public void clickFooterTerms() {
 
 public void clickFooterPrivacyPolicy() {
 	driver.findElement(footerPrivacyPolicy).click();
+}
+
+//window handling method to click on "Opportunities We Provide" in Functional Card link and switch to new tab
+public void clickOpportunitiesAndSwitchToNewTab() {
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+    // Wait for link to be visible in popup
+    wait.until(ExpectedConditions.visibilityOfElementLocated(opportunitiesLink));
+
+    String parentWindow = driver.getWindowHandle();
+    
+    driver.findElement(opportunitiesLink).click();
+    
+    wait.until(driver -> driver.getWindowHandles().size() > 1);
+
+    for (String window : driver.getWindowHandles()) {
+        if (!window.equals(parentWindow)) {
+            driver.switchTo().window(window);
+            break;
+        }
+    }
+}
+
+//window handling method to click on "Article" in Visual Card link and switch to new tab
+public String clickArticlesAndSwitchToNewTab() {
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+   
+    wait.until(ExpectedConditions.visibilityOfElementLocated(articlesLink));
+
+    String parentWindow = driver.getWindowHandle();
+
+    driver.findElement(articlesLink).click();
+    wait.until(driver -> driver.getWindowHandles().size() > 1);
+
+ 
+    for (String window : driver.getWindowHandles()) {
+        if (!window.equals(parentWindow)) {
+            driver.switchTo().window(window);
+            break;
+        }
+    }
+
+    return parentWindow;
 }
 
 
@@ -166,4 +217,19 @@ public int getTotalCardCount() {
 	}
 	return count;
 }
+
+public boolean isOpportunitiesPageOpened() {
+    return driver.getCurrentUrl().contains("opportunities") 
+        || driver.getTitle().toLowerCase().contains("opportunities");
+}
+
+public boolean isArticlesHeadingDisplayed() {
+
+    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+    return wait.until(
+        ExpectedConditions.visibilityOfElementLocated(articlesHeading)
+    ).isDisplayed();
+}
+
 }

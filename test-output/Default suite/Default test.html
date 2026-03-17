@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>25/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 15 17:47:24 IST 2026</td>
+<td>Started on:</td><td>Tue Mar 17 23:02:07 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16065 ms)</td>
+<tr><td>Total time:</td><td>169 seconds (169908 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,83 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.FindBugsPageTest.testView10LimitsProducts()'><b>testView10LimitsProducts</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking 'View 10' limits the product display to 10 items</td>
+<td><div><pre>java.lang.AssertionError: Product count should be 10 or fewer. Actual: 18 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.FindBugsPageTest.testView10LimitsProducts(FindBugsPageTest.java:174)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1415469015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1415469015'><pre>java.lang.AssertionError: Product count should be 10 or fewer. Actual: 18 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at tests.FindBugsPageTest.testView10LimitsProducts(FindBugsPageTest.java:174)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,10 +153,130 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='tests.FindBugsPageTest.testPageSubtitle()'><b>testPageSubtitle</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the page subtitle text is correct</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testCheckoutNowNavigation()'><b>testCheckoutNowNavigation</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'View Cart' button navigates to the cart page</td>
+<td></td>
+<td>3</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSortPriceLowToHigh()'><b>testSortPriceLowToHigh</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that sorting by 'Price Low-High' reorders products correctly</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testDenimCoatImageDomain()'><b>testDenimCoatImageDomain</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the Denim Coat image loads from the correct domain</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testEighteenProductsDisplayed()'><b>testEighteenProductsDisplayed</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that 18 products are displayed by default</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testDefaultSortOptionSelected()'><b>testDefaultSortOptionSelected</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the default sorting option is selected on page load</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testDarkBlueDenimJeansLoginPricing()'><b>testDarkBlueDenimJeansLoginPricing</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that Dark Blue Denim Jeans shows 'Login for Pricing' for users</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAllProductImagesLoad()'><b>testAllProductImagesLoad</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that all product images load correctly without broken icons</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testResultsCountLabel()'><b>testResultsCountLabel</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the product result count label is accurate</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testTabletViewport()'><b>testTabletViewport</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the page renders correctly on tablet viewport (768px)</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAddToCartDarkGreyJeans()'><b>testAddToCartDarkGreyJeans</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'Add to Cart' button works for Dark Grey Jeans</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSortTitleAToZ()'><b>testSortTitleAToZ</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that sorting by 'Title A-Z' reorders products alphabetically</td>
+<td></td>
+<td>2</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testBlueHoodieSalePrice()'><b>testBlueHoodieSalePrice</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the Blue Hoodie displays the correct original and sale price</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSortPriceHighToLow()'><b>testSortPriceHighToLow</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that sorting by 'Price High-Low' reorders products correctly</td>
+<td></td>
+<td>2</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testClickProductOpensDetailPage()'><b>testClickProductOpensDetailPage</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking a product name opens its detail page</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testCheckoutNavigation()'><b>testCheckoutNavigation</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the user is able to navigate to the cart page after adding a product to the cart and continue to checkout</td>
+<td></td>
+<td>7</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
 <td title='tests.FindBugsPageTest.testView50ShowsAllProducts()'><b>testView50ShowsAllProducts</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking 'View 50' shows all products without pagination</td>
 <td></td>
 <td>0</td>
-<td>tests.FindBugsPageTest@6f03482</td></tr>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testProductDetailPriceMatchesListing()'><b>testProductDetailPriceMatchesListing</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the product (Buddha Bracelet) detail page price matches the listing page price</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testLoginFromCart()'><b>testLoginFromCart</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify login functionality from cart page</td>
+<td></td>
+<td>2</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAddToCartDnkYellowShoes()'><b>testAddToCartDnkYellowShoes</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'Add to Cart' button works for DNK Yellow Shoes</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testPageLoadsSuccessfully()'><b>testPageLoadsSuccessfully</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the Find Bugs page loads successfully without errors</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testSelectOptionsFallCoat()'><b>testSelectOptionsFallCoat</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the 'Select Options' button opens the product detail page for Fall Coat</td>
+<td></td>
+<td>2</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testMobileViewport()'><b>testMobileViewport</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that the page renders correctly on mobile viewport (375px)</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testAllProductsHavePrice()'><b>testAllProductsHavePrice</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that all products display a price</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
+<tr>
+<td title='tests.FindBugsPageTest.testView25ShowsAllProducts()'><b>testView25ShowsAllProducts</b><br>Test class: tests.FindBugsPageTest<br>Test method: Verify that clicking 'View 25' shows all 18 products</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsPageTest@f5958c9</td></tr>
 </table><p>
 </body>
 </html>

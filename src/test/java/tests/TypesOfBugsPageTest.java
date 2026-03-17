@@ -164,4 +164,40 @@ public class TypesOfBugsPageTest extends BaseTest {
       
     }
     
+    @Test(priority = 16, description = "Verify window handling for Functional card popup link")
+    public void testFunctionalCardWindowHandling() {
+
+        // Step 1: Click Functional Card
+        typesOfBugsPage.clickFunctionalCard();
+
+        // Step 2: Click link and switch to new tab
+        typesOfBugsPage.clickOpportunitiesAndSwitchToNewTab();
+
+        // Step 3: Validation
+        Assert.assertTrue(
+            typesOfBugsPage.isOpportunitiesPageOpened(),
+            "New tab did not open Opportunities page"
+        );
+    }
+    
+    @Test(priority = 17, description = "Verify window handling for Visual card >>  Articles link")
+    public void testVisualCardWindowHandling() {
+
+        // Step 1: Click Visual Card
+        typesOfBugsPage.clickVisualCard();
+
+        // Step 2: Click Articles link and switch tab
+        String parent = typesOfBugsPage.clickArticlesAndSwitchToNewTab();
+
+        // Step 3: Validate Articles page
+        Assert.assertTrue(
+            typesOfBugsPage.isArticlesHeadingDisplayed(),
+            "Articles heading is not displayed in new tab"
+        );
+
+        // Step 4: Close new tab and return
+        driver.close();
+        driver.switchTo().window(parent);
+    }
+    
 }

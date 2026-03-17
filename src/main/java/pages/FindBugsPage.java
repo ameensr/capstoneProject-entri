@@ -82,6 +82,12 @@ public class FindBugsPage {
 	private By billInfoReEmail  = By.xpath("//input[@id='ec_contact_email_retype']");
 
 	private By continueToShipButton = By.xpath("(//input[@value='CONTINUE TO SHIPPING'])[1]");
+	
+	
+	// Login section in Cart page
+	private By emailField    = By.xpath("//input[@id='ec_account_login_widget_email']");
+	private By passwordField = By.xpath("//input[@id='ec_account_login_widget_password']");
+	private By signInButton  = By.xpath("//button[normalize-space()='SIGN IN']");
 
 	// ── Actions ───────────────────────────────────────────────────────────────
 
@@ -167,6 +173,30 @@ public class FindBugsPage {
 		// Step 5 — Continue to Shipping
 		driver.findElement(continueToShipButton).click();
 	}
+	
+	//Sign In from Cart page after adding item to cart
+	public void loginFromCart(String email, String password) {
+
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+	    // Step 1: Add product & go to cart
+	    clickDnkAddToCart();
+	    wait.until(ExpectedConditions.elementToBeClickable(viewCartLink)).click();
+
+	    // Step 2: Scroll down to login section
+	    ((org.openqa.selenium.JavascriptExecutor) driver)
+	        .executeScript("window.scrollBy(0,500)");
+
+	    // Step 3: Enter email
+	    wait.until(ExpectedConditions.visibilityOfElementLocated(emailField)).sendKeys(email);
+
+	    // Step 4: Enter password
+	    driver.findElement(passwordField).sendKeys(password);
+
+	    // Step 5: Click Sign In
+	    driver.findElement(signInButton).click();
+	}
+	
 
 	// ── Getters ───────────────────────────────────────────────────────────────
 
@@ -239,4 +269,22 @@ public class FindBugsPage {
 		return driver.getPageSource().contains("Successfully Added") ||
 				driver.getPageSource().contains("successfully added");
 	}
+	
+	public boolean isUserLoggedIn() {
+	    return driver.getPageSource().toLowerCase().contains("logout")
+	        || driver.getPageSource().toLowerCase().contains("my account");
+	}
+	
+	public boolean isStillOnLoginSection() {
+	    return driver.findElement(emailField).isDisplayed();
+	}
+	
+	public boolean isLoginAttemptHandled() {
+
+	    return driver.getCurrentUrl().contains("cart") 
+	        || driver.getPageSource().toLowerCase().contains("error")
+	        || driver.getPageSource().toLowerCase().contains("invalid")
+	        || driver.getPageSource().toLowerCase().contains("login");
+	}
+	
 }

@@ -208,9 +208,24 @@ public class FindBugsPageTest extends BaseTest {
 			Assert.assertTrue(driver.getPageSource().contains("107"),
 					"Buddha Bracelet detail page should show $107.00");
 		}
+		
+		@Test(priority = 23, description = "Verify login functionality from cart page")
+		public void testLoginFromCart() {
+
+		    findBugsPage.loginFromCart(
+		        "c.ar.losad.ar.us.a@gmail.com",
+		        "Abc@123456"
+		    );
+
+		    // Validation (based on site behavior)
+		    Assert.assertTrue(
+		    	    findBugsPage.isLoginAttemptHandled(),
+		    	    "Login action did not trigger any expected behavior (bug)"
+		    	);
+		}
 	 
 	 
-		@Test(priority = 23, description = "Verify that the page renders correctly on mobile viewport (375px)")
+		@Test(priority = 24, description = "Verify that the page renders correctly on mobile viewport (375px)")
 		public void testMobileViewport() {
 			driver.manage().window().setSize(new org.openqa.selenium.Dimension(375, 812));
 			Assert.assertTrue(findBugsPage.isPageSubtitleDisplayed(),
@@ -221,7 +236,7 @@ public class FindBugsPageTest extends BaseTest {
 		}
 	 
 	 
-		@Test(priority = 24, description = "Verify that the page renders correctly on tablet viewport (768px)")
+		@Test(priority = 25, description = "Verify that the page renders correctly on tablet viewport (768px)")
 		public void testTabletViewport() {
 			driver.manage().window().setSize(new org.openqa.selenium.Dimension(768, 1024));
 			Assert.assertTrue(findBugsPage.isPageSubtitleDisplayed(),
@@ -232,7 +247,7 @@ public class FindBugsPageTest extends BaseTest {
 		}
 	 
 	 
-		@Test(priority = 25, description = "Verify that the user is able to navigate to the cart page after adding a product to the cart and continue to checkout")
+		@Test(priority = 26, description = "Verify that the user is able to navigate to the cart page after adding a product to the cart and continue to checkout")
 		public void testCheckoutNavigation() {
 			findBugsPage.checkCheckOutFlow(
 					"India",
@@ -251,4 +266,5 @@ public class FindBugsPageTest extends BaseTest {
 					"Should navigate to Shipping page after Continue to Shipping. Actual URL: " + driver.getCurrentUrl()
 			);
 		}
+		
 	}
