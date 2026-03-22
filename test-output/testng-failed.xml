@@ -1,78 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.FindBugsPageTest">
-        <methods>
-          <include name="testPageSubtitle"/>
-          <include name="setup"/>
-          <include name="testBlueHoodieSalePrice"/>
-          <include name="testMobileViewport"/>
-          <include name="testAllProductsHavePrice"/>
-          <include name="testSortPriceHighToLow"/>
-          <include name="setUp"/>
-          <include name="testCheckoutNowNavigation"/>
-          <include name="testDarkBlueDenimJeansLoginPricing"/>
-          <include name="testAddToCartDarkGreyJeans"/>
-          <include name="testAllProductImagesLoad"/>
-          <include name="testEighteenProductsDisplayed"/>
-          <include name="testProductDetailPriceMatchesListing"/>
-          <include name="testDefaultSortOptionSelected"/>
-          <include name="testSelectOptionsFallCoat"/>
-          <include name="testSortTitleAToZ"/>
-          <include name="testAddToCartDnkYellowShoes"/>
-          <include name="testCheckoutNavigation"/>
-          <include name="teardown"/>
-          <include name="testSortPriceLowToHigh"/>
-          <include name="testClickProductOpensDetailPage"/>
-          <include name="testTabletViewport"/>
-          <include name="testResultsCountLabel"/>
-          <include name="testView50ShowsAllProducts"/>
-          <include name="testView10LimitsProducts"/>
-          <include name="testView25ShowsAllProducts"/>
-          <include name="testDenimCoatImageDomain"/>
-          <include name="testPageLoadsSuccessfully"/>
-          <include name="testLoginFromCart"/>
-        </methods>
-      </class> <!-- tests.FindBugsPageTest -->
-      <class name="tests.ExampleOfBugsPageTest">
+      <class name="tests.ReportBugsPageTest">
         <methods>
           <include name="setup"/>
+          <include name="testBug1WrongTitleFails"/>
           <include name="teardown"/>
-          <include name="testBookingTile"/>
-          <include name="testArticlesErrorTile"/>
-          <include name="testSocialShareTile"/>
           <include name="setUp"/>
-          <include name="testVideoPlayerTile"/>
-          <include name="testSearchErrorTile"/>
-          <include name="testSendButtonTile"/>
         </methods>
-      </class> <!-- tests.ExampleOfBugsPageTest -->
-      <class name="tests.TypesOfBugsPageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="testAllFiveBugCategoryCardsDisplayed"/>
-          <include name="testFunctionalCardWindowHandling"/>
-          <include name="testPageTitle"/>
-          <include name="testTermsAndConditionsLink"/>
-          <include name="testPrivacyPolicyLink"/>
-          <include name="testContentCard"/>
-          <include name="testTypesOfBugsNavIsActive"/>
-          <include name="testCrashCard"/>
-          <include name="testTabletViewport"/>
-          <include name="setUp"/>
-          <include name="testFunctionalCard"/>
-          <include name="testPageLoadsSuccessfully"/>
-          <include name="testVisualCard"/>
-          <include name="testPerformanceCard"/>
-          <include name="testMobileViewport"/>
-          <include name="clickFunctionalCard"/>
-          <include name="testPageSubtitle"/>
-          <include name="testVisualCardWindowHandling"/>
-        </methods>
-      </class> <!-- tests.TypesOfBugsPageTest -->
+      </class> <!-- tests.ReportBugsPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

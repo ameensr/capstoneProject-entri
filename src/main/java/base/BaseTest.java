@@ -48,7 +48,7 @@ public class BaseTest {
         driver.get(config.getBaseUrl());
 
         // optional zoom
-        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='60%'");
+        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='50%'");
     }
 
     @AfterClass(alwaysRun = true)
