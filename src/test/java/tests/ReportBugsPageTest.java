@@ -195,7 +195,7 @@ public class ReportBugsPageTest extends BaseTest {
 				"'Submit Issue' button should be visible for Bug 1");
 	}
 
-	//Fill flow
+	//Full flow
 	@Test(priority = 19, description = "Verify that the full Bug 1 report flow completes with all correct answers")
 	public void testBug1FullReportFlow() {
 
